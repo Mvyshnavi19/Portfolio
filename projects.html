@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>projects</title>
+    <style>
+        @keyframes up-down{
+            0%{
+                opacity: 0%;
+                -webkit-transform:translateY(-100%);
+            }
+            100%{
+                opacity: 100%;
+                -webkit-transform:translateY(0);   
+            }
+        }
+        @keyframes down-up{
+            0%{
+                opacity: 0%;
+                -webkit-transform:translateY(100%);
+            }
+            100%{
+                opacity: 100%;
+                -webkit-transform:translateY(0);   
+            }
+        }
+        @keyframes img_size {
+            0%{
+
+            }
+            100%{
+                width:130px;
+            }
+        }
+         body {       
+            padding-top: 60px;
+            min-height: 100vh; 
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color:  rgb(242, 236, 236);
+        }
+        nav {
+            background-color: #333;
+            color: white;
+            display: flex;
+            justify-content: flex-end;
+            padding: 15px 0px;
+            position:fixed;
+            width: 100%;
+            top:0;
+        }
+
+        nav a {
+            font-size: 25px;
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            padding:0px 5px;
+        }
+        p{
+            font-size: 20px;
+        }
+        .total{
+            display:flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .topic-1,.topic-2{
+            font-size: 30px;
+            color:purple;
+            font-weight: bold;
+        }
+        .box-1{
+            animation:up-down 2s ease-out;
+            animation-fill-mode: forwards;
+        }
+        .box-2{
+            animation:down-up 2s ease-out;
+            animation-fill-mode: forwards;
+        }
+        .box-1,.box-2{
+            max-height: fit-content;
+            width: auto;
+            border: 3px black solid;
+            border-radius: 5%;
+            padding:5px;
+            margin:5px;
+            position:relative;
+        }
+        h1{
+            color:rgb(11, 11, 230);
+            padding-left: 30px;
+        }
+        h3{
+            padding-left: 50px;  
+            font-size: 20px;
+        }
+        img{  
+        padding-top: 20px;
+            width:70px;
+            top:10px;
+            left:25px;
+            border-radius: 10px;
+            display: block;
+        margin: 0 auto;
+        }
+        img:hover{
+            animation:img_size 0.5s ease-in 1 ;
+            
+            animation-fill-mode: forwards;
+        }
+        .im{
+            width:100px; 
+        }
+    </style>
+</head>
+<body>
+    <nav>
+            <a href="index.html">about</a>
+            <a href="skills.html">skills</a>
+            <a href="projects.html">Projects</a>
+            <a href="contact.html">Contact Information</a>
+    </nav>
+    <h1>Personal Projects</h1>
+    <h3> Now Lets talk about my Projects,Where Creativity meets innovation.</h3>
+    <div class="total">
+    <div class="box-1">
+        <img id="2048" src="C:\Users\HP\Downloads\portfolio\2048game.png" alt="2048">
+    <p class="topic-2">
+        2048 Game
+    </p> 
+    <p>  
+        Dive into the world of numbers and strategy with my implementation of the classic 2048 game. Using C++, I created an engaging and addictive experience that challenges players to combine tiles and reach the elusive 2048 tile.
+    </p>   
+    </div>
+    <div class="box-2">
+        <img src="C:\Users\HP\Downloads\portfolio\calculatorimg.png" alt="claculator">
+        <p class=" topic-1">
+        Mini Calculator App
+    </p> 
+    <p>   
+        Ever needed a quick calculation tool? I've got you covered. Using the power of HTML, CSS, and JavaScript, I crafted a functional mini calculator application that's not only practical but also visually appealing.
+    </p>   
+</div>
+<div class="box-1">
+    <img class="im" src="C:\Users\HP\Downloads\portfolio\portfolioimg.png" alt="portfolio">
+    <p class="topic-1">
+        Portfolio Website
+    </p> 
+    <p> 
+        Presenting my own showcase of creativity and skills, my portfolio website. It's more than just a website; it's a canvas where I've artfully displayed a variety of projects. Through this site, I illustrate my technical prowess and knack for design.
+    </p>   
+</div>
+<div class="box-2">
+    <img class="im"  src="C:\Users\HP\Downloads\portfolio\mlimg.png" alt="ml">
+    <p class="topic-1">
+        Heart Disease Prediction using Machine Learning Algorithms
+    </p> 
+    <p>    
+        I dived into the realm of Machine Learning with a project that hits close to home, predicting heart disease. Leveraging various algorithms like Naive Bayes, Decision Tree, Random Forest, Logistic Regression, and even a hybrid model, I've worked to develop a tool that can assist in early detection.</p>
+    </p>   
+</div>
+</div>
+</body>
+</html>

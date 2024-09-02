@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meda Vyshnavi</title>
+    <style>
+        @keyframes  anim-right{
+            0%{
+                opacity:0;-webkit-transform: translateX(100%);
+            }
+            100%{
+                opacity:1;-webkit-transform: translateX(0%);
+            }
+        }
+        @keyframes animate {
+    0% {
+        opacity: 0;-webkit-transform: translateY(-100%);
+    }
+	100% {
+        opacity: 1;-webkit-transform: translateY(0%);
+    }	
+}
+
+        body { 
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh; 
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color:  rgb(242, 236, 236);
+        }
+
+         nav {
+            background-color: #333;
+            color: white;
+            display: flex;
+            justify-content: flex-end;
+            padding: 15px 0px;
+            position:fixed;
+            width: 100%;
+        }
+
+        nav a {
+            font-size: 25px;
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            padding:0px 5px;
+        }
+
+        .Left-Panel {
+            display: flex;
+            align-items: center;
+            margin-right: 20px;
+            padding: 20px;
+        }
+
+        .Left-Panel img {
+            border-radius: 50%;
+            height: 600px;
+            width: auto;
+             padding: 60px 120px;
+        }
+
+        .info {
+            max-width: 500px;
+            font-size: 25px;
+            padding-left: 50px;
+            animation: anim-right 2s ease-in 1;
+            
+        }
+
+        .about-me {
+            margin: 30px ;
+            text-align: center;
+            padding:0px 50px ;
+            border: 5px solid black;
+            border-radius: 10%;
+            animation:animate 2s linear 1;
+            animation-fill-mode: forwards;
+        }
+
+        .about-me h1,.Left-Panel h2 {
+            font-size: 40px;
+            color:rgb(130, 52, 204);
+        }
+
+        .about-me p {
+            font-size: 18px;
+            line-height: 1.5;
+            margin-bottom: 20px;
+        }
+        .about-me p{
+            font-size: 25px;
+        }
+    </style>
+</head>
+<body>
+<nav>
+   
+    <a href="skills.html">Skills</a>
+    <a href="projects.html">Projects</a>
+    <a href="contact.html">Contact Information</a>
+</nav>
+    <div class="Left-Panel">
+        <img src="C:\Users\HP\Downloads\portfolio\vyshnavi.jpg"alt="Meda Vyshnavi">
+        <div class="info">
+            <h3>Hi, I am<h2> Meda Vyshnavi.</h2></h3>
+            <p>Welcome to my portfolio website! I am a passionate and aspiring software engineer with a strong desire to create innovative solutions and push the boundaries of technology with a deep love for coding and problem-solving. I am constantly seeking opportunities to learn and grow in this ever-evolving field.</p>
+        </div>
+    </div>
+    <div class="about-me">
+        <h1>About Me</h1>
+        <p>I am currently pursuing my final year bachelor's Degree in Information Technology from SASTRA University. I have built a solid foundation in areas such as C++, SQL, Data Structures, and Algorithms. I actively seek opportunities to expand my knowledge and skills, embracing new technologies and approaches.</p>
+        <p>I have a strong belief in the value of continuous learning and staying adaptable in the ever-evolving world of software engineering. Feel free to explore my work and get in touch if you have any questions or opportunities to collaborate.</p>
+    </div>
+</body>
+</html>

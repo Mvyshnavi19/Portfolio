@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Left Panel Example</title>
+  <style>
+    body {
+      display: flex;
+    }
+    
+    .left-panel {
+      width: 200px;
+      background-color: #f1f1f1;
+      padding: 20px;
+    }
+    
+    .content {
+      flex: 1;
+      padding: 20px;
+    }
+    
+    .hidden {
+      display: none;
+    }
+    
+    .active {
+      font-weight: bold;
+    }
+  </style>
+  <script>
+    function showContent(contentId) {
+      // Hide all content divs
+      var contentDivs = document.getElementsByClassName('content');
+      for (var i = 0; i < contentDivs.length; i++) {
+        contentDivs[i].classList.add('hidden');
+      }
+      
+      // Remove 'active' class from all panel links
+      var panelLinks = document.getElementsByClassName('panel-link');
+      for (var i = 0; i < panelLinks.length; i++) {
+        panelLinks[i].classList.remove('active');
+      }
+      
+      // Show selected content and add 'active' class to the clicked panel link
+      var selectedContent = document.getElementById(contentId);
+      selectedContent.classList.remove('hidden');
+      var selectedPanelLink = document.getElementById(contentId + '-link');
+      selectedPanelLink.classList.add('active');
+    }
+  </script>
+</head>
+<body>
+  <div class="left-panel">
+    <a href="#" id="home-link" class="panel-link" onclick="showContent('home')">Home</a><br>
+    <a href="#" id="contact-link" class="panel-link" onclick="showContent('contact')">Contact</a><br>
+    <a href="#" id="info-link" class="panel-link" onclick="showContent('info')">Information</a><br>
+    <a href="#" id="guide-link" class="panel-link" onclick="showContent('guide')">Guide</a>
+  </div>
+  <div class="content" id="home">
+    <h2>Home</h2>
+    <p>Welcome to the home page.</p>
+  </div>
+  <div class="content hidden" id="contact">
+    <h2>Contact</h2>
+    <p>Contact information goes here.</p>
+  </div>
+  <div class="content hidden" id="info">
+    <h2>Information</h2>
+    <p>Additional information goes here.</p>
+  </div>
+  <div class="content hidden" id="guide">
+    <h2>Guide</h2>
+    <p>Guide content goes here.</p>
+  </div>
+</body>
+</html>

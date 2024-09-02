@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills</title>
+    <style>
+        @keyframes animate_left {
+            0%{
+                opacity:0;
+                -webkit-transform: translateX(100px);
+            }
+            100%{
+                opacity:1;
+                -webkit-transform: translateX(0px);
+            }
+        }
+        @keyframes animate_right {
+            0%{
+                opacity:0;
+                -webkit-transform: translateX(-100px);
+            }
+            100%{
+                opacity:1;
+                -webkit-transform: translateX(0px);
+            }
+        }
+        body {       
+            padding-top: 60px;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh; 
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color:  rgb(242, 236, 236);
+        }
+        nav {
+            background-color: #333;
+            color: white;
+            display: flex;
+            justify-content: flex-end;
+            padding: 15px 0px;
+            position:fixed;
+            width: 100%;
+            top:0;
+        }
+
+        nav a {
+            font-size: 25px;
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            padding:0px 5px;
+        }
+        .intro p{
+            font-size: 25px; 
+            padding:0px 20px;
+        }
+        .topic{
+            font-size: 30px;
+            color:purple;
+        }
+        .first{
+            display: flex;
+            margin: 30px 0px;
+        }
+        .programming,.ds,.sql,.os,.htm,.csss{
+            font-size: 23px;
+            word-spacing: 2px;
+            width:30%;
+            height: auto;
+            margin: 5px;
+            padding: 0px 15px;
+            border: 3px solid black;
+            border-radius: 10%;
+            align-items: center;
+            justify-content: center;
+        }
+        .programming,.sql,.htm{
+            margin:0px 100px;
+            left:100px;
+            animation:animate_right 2s linear ;
+        }
+        .ds,.os,.csss{
+            margin:0px 100px;
+            right:100px;
+            animation:animate_left 2s linear ;
+        }
+        h2{
+            font-size: 40px;
+            color:rgb(130, 52, 204);
+            padding-left: 30px;
+        }
+        .intro {
+            padding-left: 30px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html">about</a>
+        <a href="skills.html">skills</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact Information</a>
+    </nav>
+<div class="intro">
+    <p>Hi, I am<h2> Meda Vyshnavi</h2></hp>
+   <p>Welcome to my skill showcase! I'm here to tell you about the things I'm really good at , the building blocks of the digital world.</p>
+</div>
+<div class="first">
+<div class="programming">
+   <p class="topic">I Speak Computer Languages </p>
+   <p>
+    Think of computer languages like talking to machines. I'm fluent in two: C++ and Python. C++ helps me create super efficient things, while Python is like a friendly helper for all sorts of tasks.</p>
+</div>
+<div  class="ds">
+    <p class="topic">Building Cool Structures</p>
+    <p>
+    Just like building blocks, data structures let us store and organize information. I'm great at making these structures so computers can find and use data super fast.</p>
+</div>
+</div>
+<div class="first">
+<div class="sql">
+    <p class="topic">
+    Unraveling Data Mysteries</p>
+    <p>
+    Have you ever wondered how big companies manage all their information? That's where SQL and DBMS come in. I use them to ask questions to huge databases and find hidden patterns.
+</p>
+</div>
+<div class="os">
+<p class="topic"> Peeking into Computer Brains </p>
+<p>
+    Imagine a computer is like a brain. An operating system (OS) is like the manager that tells the brain what to do. I love exploring how these managers work and how they make everything run smoothly.
+</p>
+</div>
+</div>
+<div class="first">
+<div class="htm">
+<p class="topic">
+    HTML: The Building Blocks
+</p><p>
+Think of HTML as the foundation of a house. It's like arranging the bricks that form the structure. With HTML, I create the basic layout and put things in the right places.
+</p>
+</div>
+<div class="csss">
+<p class="topic">
+    CSS: Adding Style and Charm
+</p><p>
+    CSS is like the paint and decorations of a house. It gives colors, fonts, and designs that make websites look stunning. With CSS, I make sure everything is in harmony and visually appealing. 
+</p>
+</div>
+</div>
+    </body>
+</html>
